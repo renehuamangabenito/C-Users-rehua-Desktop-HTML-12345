@@ -1,0 +1,150 @@
+/* General */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('imagen/linux\ 1.webp');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    color: #495057; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para un look profesional */
+    border-bottom: 1px solid #dee2e6; /* Línea sutil debajo de la barra */
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+/* Estilo de los enlaces convertidos en botones */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+    background-color: #6c757d; /* Fondo gris para los botones */
+    padding: 10px 20px; /* Relleno para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+    margin: 0 10px;
+    display: inline-block; /* Asegura que el enlace sea como un bloque */
+}
+
+/* Cambio de color y escalado al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* Texto blanco al pasar el cursor */
+    background-color: #007bff !important; /* Fondo azul al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Animación simple de fade-in cuando la página carga */
+.navbar-nav .nav-link {
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 1s forwards; /* Aparece con una animación */
+}
+
+.navbar-nav .nav-link:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.navbar-nav .nav-link:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar-nav .nav-link:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.navbar-nav .nav-link:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hace que los enlaces se hagan visibles */
+    }
+}
+
+
+/* Hero Section */
+.container h1 {
+    color: #f92020; /* Tono oscuro profesional */
+    font-weight: bold;
+}
+.container p {
+    color: #000000; /* Texto secundario */
+}
+.btn-success {
+    background-color: #007bff; /* Azul corporativo */
+    border: none;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Features Section */
+.features {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 20px 0;
+}
+.features .square-box {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #dee2e6; /* Borde sutil */
+    border-radius: 8px;
+    color: #495057; /* Texto principal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+}
+.features i {
+    color: #007bff; /* Azul para íconos */
+    margin-bottom: 10px;
+    display: block;
+    font-size: 2rem;
+}
+.features p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    border-color: #f8f9fa; /* Borde claro */
+    color: #ffffff; /* Texto claro */
+    padding: 20px;
+    background-color: #343a40; /* Fondo oscuro para el footer */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.footer:hover {
+    background-color: #007bff; /* Fondo azul al pasar el cursor */
+}
+
+.footer p {
+    margin: 0;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Enlaces del Footer */
+.footer a {
+    color: #fefeff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la transición */
+}
+
+/* Efecto hover en los enlaces */
+.footer a:hover {
+    color: #ffffff;
+    background-color: #007bff; /* Azul vibrante */
+    transform: scale(1.1); /* Agranda el enlace al pasar el cursor */
+}
+
+

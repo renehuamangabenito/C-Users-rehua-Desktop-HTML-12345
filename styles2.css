@@ -1,0 +1,189 @@
+/* General */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('imagen/linux\ 1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease-in-out; /* Transición de fondo */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para un look profesional */
+    border-bottom: 1px solid #dee2e6; /* Línea sutil debajo de la barra */
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+/* Estilo de los enlaces convertidos en botones */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+    background-color: #6c757d; /* Fondo gris para los botones */
+    padding: 10px 20px; /* Relleno para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+    margin: 0 10px;
+    display: inline-block; /* Asegura que el enlace sea como un bloque */
+}
+
+/* Cambio de color y escalado al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* Texto blanco al pasar el cursor */
+    background-color: #007bff !important; /* Fondo azul al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Animación simple de fade-in cuando la página carga */
+.navbar-nav .nav-link {
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 1s forwards; /* Aparece con una animación */
+}
+
+.navbar-nav .nav-link:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.navbar-nav .nav-link:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar-nav .nav-link:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.navbar-nav .nav-link:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hace que los enlaces se hagan visibles */
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out; /* Animación de entrada */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.hero-content h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: slideIn 1.5s ease-out; /* Animación de deslizamiento */
+    opacity: 0;
+}
+
+.hero-content p {
+    color: #ffb71d;
+    font-size: 1.1rem;
+    animation: fadeInText 2s ease-in-out; /* Animación de texto */
+    opacity: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contact Section */
+.container h4 {
+    color: #f51717;
+    margin-bottom: 15px;
+}
+
+.list-unstyled li {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.list-unstyled strong {
+    color: #4835f1;
+}
+
+/* Buttons */
+.btn {
+    transition: transform 0.20s ease, background-color 0.20s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    background-color: #28a745; /* Cambio de color */
+}
+
+/* Footer */
+.footer {
+    border-color: #f8f9fa;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #343a40; /* Fondo oscuro */
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #007bff; /* Fondo azul al pasar el cursor */
+}
+
+.footer p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #fefeff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    background-color: #007bff;
+}
+
+/* Efecto al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animación de fade-in en imágenes */
+.card-img-top {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    opacity: 1; /* Imagen aparece al pasar el cursor sobre la tarjeta */
+}

@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('imagen/fondo\ 4.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    color: #495057; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #6bd9e6; /* Fondo blanco para un look profesional */
+    border-bottom: 1px solid #4b91d7; /* Línea sutil debajo de la barra */
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+/* Estilo de los enlaces convertidos en botones */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Texto blanco */
+    background-color: #6c757d; /* Fondo gris para los botones */
+    padding: 10px 20px; /* Relleno para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+    margin: 0 10px;
+    display: inline-block; /* Asegura que el enlace sea como un bloque */
+}
+
+/* Cambio de color y escalado al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* Texto blanco al pasar el cursor */
+    background-color: #007bff !important; /* Fondo azul al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Animación simple de fade-in cuando la página carga */
+.navbar-nav .nav-link {
+    opacity: 0; /* Empieza invisible */
+    animation: fadeIn 1s forwards; /* Aparece con una animación */
+}
+
+.navbar-nav .nav-link:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.navbar-nav .nav-link:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar-nav .nav-link:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.navbar-nav .nav-link:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hace que los enlaces se hagan visibles */
+    }
+}
+
+/* Hero Section */
+.container h1 {
+    color: #e82510; /* Tono oscuro profesional */
+}
+.container p {
+    color: #000000; /* Texto secundario */
+}
+.btn-success {
+    background-color: #007bff; /* Azul corporativo */
+    border: none;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #0056b3; /* Azul más oscuro para hover */
+}
+
+/* Features Section */
+.features {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 20px 0;
+}
+.features .square-box {
+    background-color: #ffffff; /* Blanco para cajas */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #dee2e6; /* Borde sutil */
+    border-radius: 8px;
+    color: #494957;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+.features i {
+    color: #007bff; /* Azul para íconos */
+    margin-bottom: 10px;
+}
+.features p {
+    margin-top: 10px;
+}
+
+/* Products Section */
+.card {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.card-title {
+    color: #0f49ea; /* Texto oscuro */
+    font-weight: bold;
+}
+.card-text {
+    color: #6c757d; /* Texto secundario */
+}
+.card-img-top {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.btn-success {
+    background-color: #636161e2;
+    border: none;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #59dad0ba;
+}
+
+/* Footer */
+.footer {
+    border-color: #f8f9fa; /* Borde claro */
+    color: #ffffff; /* Texto claro */
+    padding: 20px;
+    background-color: #343a40; /* Fondo oscuro para el footer */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.footer:hover {
+    background-color: #007bff; /* Fondo azul al pasar el cursor */
+}
+
+.footer p {
+    margin: 0;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Enlaces del Footer */
+.footer a {
+    color: #fefeff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la transición */
+}
+
+/* Efecto hover en los enlaces */
+.footer a:hover {
+    color: #ffffff;
+    background-color: #007bff; /* Azul vibrante */
+    transform: scale(1.1); /* Agranda el enlace al pasar el cursor */
+}
+
+
+/* Estilo de la tarjeta */
+.card {
+    background-image: url('imagen/linux\ 1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border: none;
+    opacity: 0; /* Comienza invisible */
+    animation: fadeInImage 3s ease-out forwards; /* Animación de fade-in para la imagen */
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+/* Superposición oscura en la tarjeta */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+    z-index: 0;
+}
+
+/* Animación de fade-in para la imagen */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: scale(1.05); /* Imagen comienza un poco más grande */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Imagen en su tamaño original */
+    }
+}
+
